@@ -1,7 +1,7 @@
 FROM tensorflow/tensorflow:1.13.2-gpu
 MAINTAINER Ross Koepke <koepke@gmail.com>
 
-RUN apt install -y git
+RUN apt install -y git --fix-missing
 RUN git clone https://github.com/AlexEMG/DeepLabCut.git
 RUN apt install -y wget
 RUN mkdir ~/tmp
