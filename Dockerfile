@@ -4,7 +4,6 @@ MAINTAINER Ross Koepke <koepke@gmail.com>
 RUN apt-get update && apt install --fix-missing -y git wget
 RUN git clone https://github.com/AlexEMG/DeepLabCut.git
 RUN mkdir ~/tmp
-RUN cd ~/tmp
 RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -P /root/tmp/
 RUN bash /root/tmp/Anaconda3-2019.10-Linux-x86_64.sh -b -p /root/anaconda3
 RUN eval "$(/root/anaconda3/bin/conda shell.bash hook)"
